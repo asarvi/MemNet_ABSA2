@@ -60,7 +60,7 @@ def main(_):
   print('loading pre-trained word vectors for train and test data')
   
   pre_trained_context_wt, pre_trained_target_wt = get_embedding_matrix(embeddings, source_word2idx,  target_word2idx, FLAGS.edim)
-  
+  tf.reset_default_graph()
   with tf.Graph().as_default():
     model = MemN2N(FLAGS, None, pre_trained_context_wt, pre_trained_target_wt)
     model.build_model()
