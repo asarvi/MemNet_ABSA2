@@ -131,7 +131,7 @@ class MemN2N(object):
 
       self.correct_prediction = tf.argmax(self.z, 1)
 
-      self.saver = tf.train.Saver(max_to_keep=self.max_to_keep)
+      self.saver = tf.train.Saver(max_to_keep=self.max_to_keep,clear_devices=True)
 
     def train(self, data, epch_num=0):
       source_data, source_loc_data, target_data, target_label= data
