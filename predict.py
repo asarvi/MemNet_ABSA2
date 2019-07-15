@@ -25,7 +25,7 @@ flags.DEFINE_string("train_data", "data/Laptops_Train.xml.seg", "train gold data
 flags.DEFINE_string("data", "ABSAtest.txt", "test gold data set path [ABSAtest.txt]")
 flags.DEFINE_boolean("show", False, "print progress [False]")
 flags.DEFINE_string("model_dir", 'trained_model',"")
-flags.DEFINE_integer("save_steps", 100, "")
+flags.DEFINE_integer("save_steps", 1000, "")
 flags.DEFINE_integer("max_ckpt_to_keep", 100, "")
 flags.DEFINE_string("ckpt_name","", "e.x. model.ckpt-1000")
 flags.DEFINE_string("output_path","", "e.x. output.txt")
