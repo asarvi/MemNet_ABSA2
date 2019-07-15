@@ -24,7 +24,7 @@ flags.DEFINE_string("train_data", "data/Laptops_Train.xml.seg", "train gold data
 flags.DEFINE_string("test_data", "data/Laptops_Test_Gold.xml.seg", "test gold data set path [./data/Laptops_Test_Gold.xml.seg]")
 flags.DEFINE_boolean("show", False, "print progress [False]")
 flags.DEFINE_string("model_dir", 'trained_model',"")
-flags.DEFINE_integer("save_steps", 100, "")
+flags.DEFINE_integer("save_steps", 1000, "")
 flags.DEFINE_integer("max_ckpt_to_keep", 100, "")
 flags.DEFINE_integer("pad_idx", 0, "")
 flags.DEFINE_integer("nwords", 0, "")
